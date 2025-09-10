@@ -1,15 +1,32 @@
 // Assignment 1 - Fuel Range
-// TODO: YOUR NAME HERE
+// TODO: Dylan Rutt
 #include <iostream>
-// TODO: Add the "using" statement
+#include <algorithm>
+using namespace std; 
 
 int main() {
-  // TODO: Declare your variables, with comments for each
+ double tankCapacity, milesPerGallon;
+int percentFull;
 
-  // TODO: Prompt for and input the required values
+// prompt for inputs
+cout << "enter the capacity of the fuel tank in gallons: ";
+cin >> tankCapacity;
 
-  // TODO: Calculate the results
+cout<< "enter the miles per gallon: ";
+cin >> milesPerGallon;
 
-  // TODO: Output the results
-  
+cout << "enter the percentage the tank is filled (0-100): ";
+cin>> percentFull;
+
+// calculate remaining fuel
+double fuelRemaining = tankCapacity * (percentFull / 100.0);
+
+// Calculate range
+double miles = fuelRemaining * milesPerGallon;
+
+// display result
+cout << "\nthe vehicle can be driven " << miles
+<< " miles on the remaining fuel." << end1; 
+
+return 0;
 }
